@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit DeailyResult{% endblock %}
+
+{% block body %}
+    <h1>Edit DeailyResult</h1>
+
+    {{ include('deaily_result/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('app_deaily_result_index') }}">back to list</a>
+
+    {{ include('deaily_result/_delete_form.html.twig') }}
+{% endblock %}
